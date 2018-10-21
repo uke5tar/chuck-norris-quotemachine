@@ -1,0 +1,141 @@
+h1 {
+    font-family: 'Rock Salt', cursive, Cambria, Georgia, serif;
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #d2d2d2;
+}
+
+.btn-custom {
+    background-color: #4B5320;
+    color: white;
+    font-family: Cambria, Georgia, serif;
+}
+
+.btn-custom:hover, .btn-custom:active, .btn-custom:focus {
+    background-color: #40461d;
+    color: white;
+}
+
+.get-quote-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.wrap {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	position: relative;
+    left: -5000px;
+    transition: transform 1s ease;
+}
+
+.wrap--showup {
+    transform: translateX(5000px);
+}
+
+.wrap p {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+    border-left: 0;
+}
+
+.wrap blockquote {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.wrap-style {
+	background: #363738 repeat top left;
+	margin-top: 100px;
+	padding-top: 100px;
+	color: #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	border-top: 10px solid #fff;
+}
+
+.quote-img {
+    cursor: pointer;
+}
+
+.wrap-style .quote-img {
+	display: block;
+	width: 180px;
+	height: 180px;
+	border: 10px solid rgba(255,255,255,0.5);
+	border-radius: 50%;
+	background: url(/img/chuck-norris.png) no-repeat center center;
+	position: absolute;
+	left: 50%;
+	top: -90px;
+	margin: 0 0 0 -90px;
+	box-shadow:
+		inset 1px 1px 4px rgba(0,0,0,0.5),
+		0 2px 3px rgba(0,0,0,0.6);
+}
+
+.wrap-style blockquote:before,
+.wrap-style blockquote:after {
+	font-family: 'icons';
+	position: absolute;
+	font-size: 70px;
+	top: -95px;
+	color: #242526;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+
+.wrap-style blockquote:before{
+	content: '\275d';
+}
+
+.wrap-style blockquote:after{
+	right: 0px;
+	content: '\e800';
+}
+
+.wrap-style blockquote p {
+	font-family: Cambria, Georgia, serif;
+	font-style: italic;
+	font-size: 25px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	padding: 10px 10px 20px 10px;
+	text-align: center;
+	margin: 0 0 20px 0;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+}
+
+.social p {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1b1c1d;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+    text-align: right;
+}
+
+.social p:hover {
+    color: red;
+}
+
+.social .social-twitter:hover {
+    background-color: #4099FF;
+    border-color: #4099FF;
+    color: white;
+}
